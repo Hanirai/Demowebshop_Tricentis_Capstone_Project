@@ -16,11 +16,10 @@ Then Registered successfuly
 
 Examples:
 |First name   |Second name  |Email                 |Password    |Confirm password |
-|Hani         |Rai          |haniiigrai@gmail.com   |pass@123    |pass@123         |
+|Hani         |Rai          |haniiigraii@gmail.com   |pass@123    |pass@123         |
 
 @registerwithinvalidemail
 Scenario Outline: Register on the website with invalid email
-When Click on logout
 And click on register
 And Choose gender
 And Enter "<First name>" in first name field
@@ -49,7 +48,6 @@ Examples:
 
 @loginwithinvalidcredentials
 Scenario Outline: Login with valid credentials
-When Click on logout
 When Click on login
 And Enter "<Email>" in email field
 And Enter "<Password>" in password field

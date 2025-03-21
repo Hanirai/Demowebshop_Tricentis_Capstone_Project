@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="14.928" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="adding the product and completing the purchase" name="adding items and purchasing - #1.1" time="14.573">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;span class=&quot;cart-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1005, 7). Other element would receive the click: &lt;div id=&quot;bar-notification&quot; class=&quot;bar-notification success&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a6addada77794d7a4c4819bf59081e1, clickElement {id=f.DCBC576AC9095D80D9BA9BBE7AD3F653.d.4A54F321A756AB7E977E6C36DA997366.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58429/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1a6addada77794d7a4c4819bf59081e1)] -&gt; xpath: //span[normalize-space()='Shopping cart']]
+Session ID: 1a6addada77794d7a4c4819bf59081e1">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="cart-label">...</span> is not clickable at point (1005, 7). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a6addada77794d7a4c4819bf59081e1, clickElement {id=f.DCBC576AC9095D80D9BA9BBE7AD3F653.d.4A54F321A756AB7E977E6C36DA997366.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58429/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1a6addada77794d7a4c4819bf59081e1)] -> xpath: //span[normalize-space()='Shopping cart']]
+Session ID: 1a6addada77794d7a4c4819bf59081e1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pages.OrderPage.shoppinglink(OrderPage.java:58)
+	at com.StepDefinition.OrderStepDef.i_click_on_shopping_cart_link(OrderStepDef.java:32)
+	at ✽.I click on shopping cart link(file:///C:/Users/Administrator/eclipse-workspace/com.DemoWebshop/src/test/resources/features/OrderPlacement.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I search "health book" for adding to cart.............................passed
+When I add the product to cart..............................................passed
+And I click on shopping cart link...........................................failed
+And I click on checkout.....................................................skipped
+And I login and proceed to checkout.........................................skipped
+And I enter billing address.................................................skipped
+And I continue with shipping address........................................skipped
+And I continue with shipping method.........................................skipped
+And I continue with payment methods.........................................skipped
+And I confirm order.........................................................skipped
+Then I validate the successfully processed order............................skipped
+]]></system-out>
+</testcase>
+</testsuite>
